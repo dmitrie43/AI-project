@@ -1,0 +1,68 @@
+{
+  "dataset": {
+    "path": "data\\raw\\tickets.csv",
+    "rows": 120,
+    "target": "is_open",
+    "features": [
+      "category",
+      "priority",
+      "satisfaction",
+      "tag_count"
+    ],
+    "positive_rate": 0.2916666666666667
+  },
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "train_rows": 96,
+    "val_rows": 24
+  },
+  "baseline_majority": {
+    "strategy": "most_frequent",
+    "majority_class": 0,
+    "majority_share_train": 0.7083333333333334,
+    "accuracy": 0.7083333333333334,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+  },
+  "model_logistic": {
+    "accuracy": 0.7083333333333334,
+    "precision": 0.5,
+    "recall": 0.5714285714285714,
+    "f1": 0.5333333333333333
+  },
+  "beats_baseline_accuracy": false,
+  "beats_baseline_f1": true,
+  "classification_report": {
+    "0": {
+      "precision": 0.8125,
+      "recall": 0.7647058823529411,
+      "f1-score": 0.7878787878787878,
+      "support": 17.0
+    },
+    "1": {
+      "precision": 0.5,
+      "recall": 0.5714285714285714,
+      "f1-score": 0.5333333333333333,
+      "support": 7.0
+    },
+    "accuracy": 0.7083333333333334,
+    "macro avg": {
+      "precision": 0.65625,
+      "recall": 0.6680672268907563,
+      "f1-score": 0.6606060606060606,
+      "support": 24.0
+    },
+    "weighted avg": {
+      "precision": 0.7213541666666666,
+      "recall": 0.7083333333333334,
+      "f1-score": 0.7136363636363635,
+      "support": 24.0
+    }
+  },
+  "artifacts": {
+    "model": "artifacts\\model.joblib",
+    "metrics": "artifacts\\metrics.json"
+  }
+}

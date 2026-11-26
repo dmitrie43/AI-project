@@ -1,0 +1,143 @@
+{
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "doc_count": 27,
+  "embedding_dim": 384,
+  "normalized": true,
+  "docs": [
+    {
+      "id": "access-request.md",
+      "path": "data\\corpus\\access-request.md",
+      "text": "# Access request\n\nRequest systems through the Access catalog. Pick the role template instead of custom permissions when possible.\nEmergency production access needs dual approval and an expiry time."
+    },
+    {
+      "id": "access-revoke.md",
+      "path": "data\\corpus\\access-revoke.md",
+      "text": "# Access revoke\n\nWhen an employee leaves, HR opens an offboarding ticket. IT revokes SSO, VPN, and badges the same day.\nManagers must remove shared mailbox ownership before the last day."
+    },
+    {
+      "id": "billing-invoice.md",
+      "path": "data\\corpus\\billing-invoice.md",
+      "text": "# Billing invoices\n\nDownload invoices from the Billing portal under Documents. Filter by month and cost center.\nMissing invoices: check the vendor email and spam folder, then open a billing ticket."
+    },
+    {
+      "id": "billing-refund.md",
+      "path": "data\\corpus\\billing-refund.md",
+      "text": "# Billing refunds\n\nRefunds for unused seats require finance approval. Attach the original invoice and seat report.\nRefunds appear in 10–15 business days on the corporate card statement."
+    },
+    {
+      "id": "db-access.md",
+      "path": "data\\corpus\\db-access.md",
+      "text": "# Database access\n\nRead-only prod access uses a bastion and short-lived credentials.\nWrite access is limited to migration jobs. Ad-hoc UPDATEs in production are forbidden."
+    },
+    {
+      "id": "db-backup.md",
+      "path": "data\\corpus\\db-backup.md",
+      "text": "# Database backups\n\nProduction databases take nightly snapshots. Point-in-time recovery is available for 7 days.\nRestore requests need a change ticket and DBA approval. Never restore over production without a freeze window."
+    },
+    {
+      "id": "deploy-feature-flags.md",
+      "path": "data\\corpus\\deploy-feature-flags.md",
+      "text": "# Feature flags\n\nNew risky features ship behind flags. Default off in production until a gradual rollout.\nKill switches must be documented in the runbook before launch."
+    },
+    {
+      "id": "deploy-pipeline.md",
+      "path": "data\\corpus\\deploy-pipeline.md",
+      "text": "# Deploy pipeline\n\nMerges to main trigger staging. Production deploy needs a green pipeline and an approved change ticket.\nRollback uses the previous container image tag. Hotfixes still go through CI."
+    },
+    {
+      "id": "email-outlook.md",
+      "path": "data\\corpus\\email-outlook.md",
+      "text": "# Outlook and email\n\nConfigure Outlook with SSO. Shared mailboxes appear automatically after access approval.\nIf calendar sync fails, remove the account profile and add it again."
+    },
+    {
+      "id": "email-phishing.md",
+      "path": "data\\corpus\\email-phishing.md",
+      "text": "# Phishing report\n\nForward suspicious email as an attachment to security@company.example.\nDo not click links. Security responds within one business day with a ticket id."
+    },
+    {
+      "id": "incident-p1.md",
+      "path": "data\\corpus\\incident-p1.md",
+      "text": "# P1 incident response\n\nP1 means customer-facing outage. Page the on-call engineer and open a bridge call within 5 minutes.\nPost status updates every 15 minutes until mitigation. Write a postmortem within 48 hours."
+    },
+    {
+      "id": "incident-status.md",
+      "path": "data\\corpus\\incident-status.md",
+      "text": "# Status page updates\n\nOnly incident commanders publish status page changes. Use templates: investigating, identified, monitoring, resolved.\nNever blame a vendor by name on the public page."
+    },
+    {
+      "id": "laptop-dock.md",
+      "path": "data\\corpus\\laptop-dock.md",
+      "text": "# Laptop docking station\n\nConnect the USB-C dock before opening the lid. Displays should appear within 30 seconds.\nIf external monitors stay black, update the dock firmware from the hardware portal."
+    },
+    {
+      "id": "laptop-setup.md",
+      "path": "data\\corpus\\laptop-setup.md",
+      "text": "# New laptop setup\n\nNew hires receive a laptop with disk encryption and the company MDM profile.\nInstall the VPN client, SSO browser extension, and chat app from the software portal.\nFirst login must be on the office network or through onboarding Wi-Fi."
+    },
+    {
+      "id": "onboarding-accounts.md",
+      "path": "data\\corpus\\onboarding-accounts.md",
+      "text": "# Onboarding accounts\n\nIT creates email, SSO, and wiki accounts before the start date.\nContractors get time-boxed accounts. Extensions require manager approval in the ticket."
+    },
+    {
+      "id": "onboarding-checklist.md",
+      "path": "data\\corpus\\onboarding-checklist.md",
+      "text": "# Onboarding checklist\n\nDay one: badge, laptop, SSO account, Slack or Teams, HR portal.\nRequest tool access through the Access catalog. Managers approve within one business day.\nComplete security training in the first week."
+    },
+    {
+      "id": "password-reset.md",
+      "path": "data\\corpus\\password-reset.md",
+      "text": "# Password reset\n\nUse the Forgot password link on the SSO screen. A reset email is sent to your work inbox.\nTemporary passwords expire in 24 hours. Do not share reset links in chat."
+    },
+    {
+      "id": "printer-setup.md",
+      "path": "data\\corpus\\printer-setup.md",
+      "text": "# Printer setup\n\nInstall the floor printer from the software portal using the building and floor codes.\nBadge printing requires a second authentication tap on the printer panel."
+    },
+    {
+      "id": "security-laptop-loss.md",
+      "path": "data\\corpus\\security-laptop-loss.md",
+      "text": "# Lost laptop\n\nReport a lost or stolen laptop immediately to IT security. The device will be remotely locked and wiped via MDM.\nFile a police report number in the ticket when available."
+    },
+    {
+      "id": "security-usb.md",
+      "path": "data\\corpus\\security-usb.md",
+      "text": "# USB policy\n\nPersonal USB drives are blocked by MDM. Approved encrypted drives can be requested through the Access catalog.\nExceptions expire in 30 days."
+    },
+    {
+      "id": "slack-guide.md",
+      "path": "data\\corpus\\slack-guide.md",
+      "text": "# Chat workspace\n\nJoin the company workspace with your work email. Default channels: #general, #it-help, #announcements.\nPrivate channels require an invite from a current member."
+    },
+    {
+      "id": "sso-login.md",
+      "path": "data\\corpus\\sso-login.md",
+      "text": "# SSO login\n\nCorporate apps use single sign-on. Open the app, choose Company SSO, and sign in with your work email.\nIf login loops, clear browser cookies for the identity provider and retry.\nAfter a password change, wait up to 15 minutes or re-authenticate MFA."
+    },
+    {
+      "id": "sso-mfa.md",
+      "path": "data\\corpus\\sso-mfa.md",
+      "text": "# SSO MFA\n\nMulti-factor authentication is required for SSO. Approve the push on your phone or enter the authenticator code.\nIf the device was replaced, ask IT to reset MFA enrollment before the next login."
+    },
+    {
+      "id": "vpn-reset.md",
+      "path": "data\\corpus\\vpn-reset.md",
+      "text": "# VPN reset\n\nIf the corporate VPN will not connect, open the VPN client, sign out, and choose Reset connection.\nClear the local VPN cache, reconnect to the office network profile, and verify MFA succeeds.\nCommon errors: timed out, authentication failed, tunnel established but no internet."
+    },
+    {
+      "id": "vpn-split-tunnel.md",
+      "path": "data\\corpus\\vpn-split-tunnel.md",
+      "text": "# VPN split tunneling\n\nSplit tunnel sends only corporate traffic through the VPN. Enable it in Advanced settings when video calls become slow on VPN.\nDisable split tunnel when you need full network isolation for security testing."
+    },
+    {
+      "id": "wifi-guest.md",
+      "path": "data\\corpus\\wifi-guest.md",
+      "text": "# Guest Wi-Fi\n\nReception issues a guest code valid for 8 hours. Codes are single-use and logged.\nDo not share guest codes for employee devices; use CorpWiFi instead."
+    },
+    {
+      "id": "wifi-office.md",
+      "path": "data\\corpus\\wifi-office.md",
+      "text": "# Office Wi-Fi\n\nConnect to CorpWiFi and sign in with SSO. GuestWiFi is for visitors and has no intranet access.\nCaptive portal issues: forget the network, reconnect, and accept the certificate."
+    }
+  ]
+}

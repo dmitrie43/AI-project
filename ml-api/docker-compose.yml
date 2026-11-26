@@ -1,0 +1,20 @@
+# ML API service
+# Requires: docker network create internal-assistant-net
+# Config: .env (see .env.example)
+
+services:
+  ml-api:
+    build: .
+    container_name: ${ML_API_CONTAINER:-ia-ml-api}
+    env_file:
+      - .env
+    ports:
+      - "${ML_API_HOST_PORT:-8000}:8000"
+    networks:
+      - internal-assistant-net
+    restart: unless-stopped
+
+networks:
+  internal-assistant-net:
+    external: true
+    name: ${DOCKER_NETWORK:-internal-assistant-net}

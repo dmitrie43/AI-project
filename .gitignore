@@ -1,0 +1,24 @@
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Laravel runtime (keep samples)
+laravel/vendor/
+laravel/node_modules/
+laravel/.env
+laravel/storage/logs/*.log
+laravel/storage/framework/cache/data/
+laravel/storage/framework/sessions/
+laravel/storage/framework/views/
+laravel/public/hot
+laravel/public/storage
+laravel/.phpunit.result.cache
+
+# ml-api
+ml-api/.venv/
+ml-api/__pycache__/
+ml-api/.pytest_cache/
+ml-api/.ruff_cache/
+ml-api/*.egg-info/
